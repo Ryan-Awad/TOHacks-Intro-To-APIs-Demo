@@ -1,10 +1,12 @@
+# Use of the GET request
+
 import json
-from functions.api_key_manager import get_api_key
+from functions.auth_manager import get_api_key
 from functions.get_req import get_request
 
 api_key = get_api_key()
 
-blog_id = input('Input the Blog ID of the blog you want to retrieve: ')
+blog_id = input('Input the Blog ID of the blog that contains the posts you want to retrieve: ')
 url = f'https://www.googleapis.com/blogger/v3/blogs/{blog_id}/posts?key={api_key}'
 
 response_code, response_content = get_request(url)

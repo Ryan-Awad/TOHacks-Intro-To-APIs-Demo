@@ -1,5 +1,7 @@
+# Use of the GET request
+
 import json
-from functions.api_key_manager import get_api_key
+from functions.auth_manager import get_api_key
 from functions.get_req import get_request
 
 api_key = get_api_key()
