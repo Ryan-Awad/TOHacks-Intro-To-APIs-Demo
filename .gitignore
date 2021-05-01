@@ -1,3 +1,4 @@
 credentials.json
 api_key.json
 .vscode/*
+*/__pycache__/*
